@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_circle_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewItemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Shirt Cleaning"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewMinus"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/RateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rate"
+        app:layout_constraintStart_toStartOf="@+id/textViewItemName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewService" />
+
+    <TextView
+        android:id="@+id/textViewRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="100.00"
+        app:layout_constraintStart_toEndOf="@+id/RateText"
+        app:layout_constraintTop_toTopOf="@+id/RateText" />
+
+    <ImageView
+        android:id="@+id/imageViewMinus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPlus"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberQty"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPlus" />
+
+    <EditText
+        android:id="@+id/editTextNumberQty" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="#FFFFFF"
+        android:ems="3"
+        android:inputType="number"
+        android:padding="0dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPlus"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewPlus"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPlus" />
+
+    <ImageView
+        android:id="@+id/imageViewPlus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewItemName" />
+
+    <TextView
+        android:id="@+id/textViewAvailQty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Qty:3"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="@+id/textViewItemName"
+        app:layout_constraintStart_toEndOf="@+id/textViewRate"
+        app:layout_constraintTop_toTopOf="@+id/RateText" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAvailQty"
+        app:layout_constraintEnd_toStartOf="@+id/textViewsubTotal"
+        app:layout_constraintStart_toStartOf="@+id/imageViewMinus" />
+
+    <TextView
+        android:id="@+id/textViewsubTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="200.00"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewPlus"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textViewService"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textViewItemName"
+        app:layout_constraintStart_toStartOf="@+id/textViewItemName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItemName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

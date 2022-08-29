@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.blueskyprojects.newlaundry">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_eisa_logos"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_eisa_logos"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.blueskyprojects.newlaundry.HistoryPaymentActivity"></activity>
+        <activity android:name="com.blueskyprojects.newlaundry.HistoryBillActivity" />
+        <activity android:name="com.blueskyprojects.newlaundry.PaymentActivity" />
+        <activity android:name="com.blueskyprojects.newlaundry.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.blueskyprojects.newlaundry.ReturnActivity" />
+        <activity android:name="com.blueskyprojects.newlaundry.ItemSelectActivity" />
+        <activity android:name="com.blueskyprojects.newlaundry.jobActivity" />
+        <activity android:name="com.blueskyprojects.newlaundry.NewCustomer" />
+        <activity android:name="com.blueskyprojects.newlaundry.CustomerList" />
+        <activity android:name="com.blueskyprojects.newlaundry.MainActivity" />
+    </application>
+
+</manifest>
